@@ -1,13 +1,27 @@
+"use client";
 import Image from "next/image";
 import Link from "next/link";
 import { Linkedin } from "lucide-react";
 import { Github } from "lucide-react";
 import Navbar from "@/components/nav";
+import { useState, useEffect } from "react";
 
 export default function Home() {
+  const [color, setColor] = useState("black");
+  useEffect(() => {
+    const colors = ["red", "blue", "green", "orange", "purple"];
+    let index = 0;
+    const intervalId = setInterval(() => {
+      setColor(colors[index]);
+      index = (index + 1) % colors.length;
+    }, 1000);
+
+    // Cleanup interval on component unmount
+    return () => clearInterval(intervalId);
+  }, []);
   return (
-    <main className="flex justify-center h-screen">
-      <div className="max-w-[800px] flex flex-col px-[16px] py-[16px] h-fit gap-y-[60px] mt-20 max-md:px-6 ">
+    <main className="flex justify-center items-center h-screen">
+      {/* <div className="max-w-[800px] flex flex-col px-[16px] py-[16px] h-fit gap-y-[60px] mt-20 max-md:px-6 ">
         <div className="flex flex-col gap-y-1">
           <h1 className="font-bold">Nana Kofi Okae</h1>
 
@@ -54,7 +68,10 @@ export default function Home() {
           </p>
         </div>
         <Navbar />
-      </div>
+      </div> */}
+      <h1 className="text-3xl font-bold" style={{ color }}>
+        Rebuilding... Sorry :(
+      </h1>
     </main>
   );
 }
