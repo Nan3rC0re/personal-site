@@ -1,9 +1,10 @@
 "use client";
-import React, { useRef } from "react";
+import React from "react";
 import DecodeAnimation from "react-decode-animation";
 import { projects } from "@/config/data";
 import Link from "next/link";
 import Navbar from "@/components/nav";
+import { Badge } from "@/components/ui/badge";
 
 export default function Projects() {
   return (
@@ -25,6 +26,7 @@ export default function Projects() {
                 />
               </h1>
               <div className="flex flex-row justify-between">
+                {/* <Badge variant="outline" className="mt-1 mb-1"> */}
                 <p className="w-fit font-semibold text-muted-foreground text-sm">
                   <DecodeAnimation
                     autoplay
@@ -32,7 +34,9 @@ export default function Projects() {
                     allowedCharacters={["numbers", "symbols"]}
                   />
                 </p>
-                <p className="w-fit">
+                {/* </Badge> */}
+
+                <p className="w-fit font-semibold text-muted-foreground text-sm">
                   <DecodeAnimation
                     autoplay
                     text={project.date}

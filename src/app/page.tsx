@@ -35,10 +35,10 @@ export default function Home() {
                 width={45}
                 height={45}
                 alt="Duolingo Logo"
-                className="h-auto w-auto"
+                className="h-auto w-auto inline-block"
               />
             </span>
-            in the Monetization team on subscription Packaging.
+            in the Monetization team on subscription packaging.
           </p>
           <p className="flex items-center flex-wrap  ">
             I was previously a Full Stack Software Engineer intern @
@@ -48,7 +48,7 @@ export default function Home() {
                 width={50}
                 height={50}
                 alt="Salesforce Logo"
-                className="h-auto w-auto"
+                className="h-auto w-auto inline-block"
               />
             </span>
           </p>

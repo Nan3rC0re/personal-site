@@ -37,7 +37,7 @@ export const projects: projects[] = [
     id: "4",
     name: "Campus Creators",
     type: "Design",
-    date: "2023",
+    date: "2024",
     description:
       "A web platform for students who share their skills with others in their campus community.",
     href: "https://www.figma.com/design/MMlCgHTZvmKwnmHI1tiqQL/2-dolla-sign?node-id=0-1&t=uVwkP7zGtrDJy66I-1",
