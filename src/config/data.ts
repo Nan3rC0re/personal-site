@@ -1,7 +1,7 @@
 interface projects {
   name: string;
   id: string;
-  type: string;
+  // type: string;
   description: string;
   date: string;
   href: string;
@@ -11,7 +11,7 @@ export const projects: projects[] = [
   {
     id: "1",
     name: "CS Activities",
-    type: "Engineering",
+    // type: "Engineering",
     description: "Senior capstone website where all the activities made.",
     date: "2024",
     href: "https://cs-activities-capstone.vercel.app/",
@@ -19,7 +19,7 @@ export const projects: projects[] = [
   {
     id: "2",
     name: "Professor Portfolio Website",
-    type: "Engineering",
+    // type: "Engineering",
     description:
       "Developed a simple portfolio website for my professor and her students projects.",
     date: "2024",
@@ -28,7 +28,7 @@ export const projects: projects[] = [
   {
     id: "3 ",
     name: "Duo Sing",
-    type: "Design",
+    // type: "Design",
     description: "An experimental hands free experience for the duolingo app.",
     date: "2023",
     href: "https://www.figma.com/design/v7dkT9wcwAHRo5DDWmuJtE/Nana-x-Liv?node-id=1717-4921&t=WBNJuxXL2LdmvxQW-1",
@@ -36,7 +36,7 @@ export const projects: projects[] = [
   {
     id: "4",
     name: "Campus Creators",
-    type: "Design",
+    // type: "Design",
     date: "2024",
     description:
       "A web platform for students who share their skills with others in their campus community.",
@@ -45,7 +45,7 @@ export const projects: projects[] = [
   {
     id: "5",
     name: "Securitea",
-    type: "Engineering",
+    // type: "Engineering",
     description:
       "A web platform to make company security training more interactive and fun.",
     date: "2022",

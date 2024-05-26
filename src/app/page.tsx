@@ -41,7 +41,7 @@ export default function Home() {
             in the Monetization team on subscription packaging.
           </p>
           <p className="flex items-center flex-wrap  ">
-            I was previously a Full Stack Software Engineer intern @
+            I was previously a Full Stack Software Engineer Intern @
             <span className="inline-block mx-2">
               <Image
                 src="/Salesforce.svg"

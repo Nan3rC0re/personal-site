@@ -9,15 +9,15 @@ import { Badge } from "@/components/ui/badge";
 export default function Projects() {
   return (
     <main className="flex justify-center h-screen">
-      <div className="w-[800px] flex flex-col py-[16px] h-fit gap-y-[60px] mt-20">
+      <div className="w-[800px] flex flex-col py-[16px] h-fit gap-y-[60px] mt-20  max-md:px-4">
         <h1 className="font-medium px-[16px]">Projects</h1>
-        <div className="flex flex-col w-full">
+        <div className="flex flex-col w-full ">
           {projects.map((project) => (
             <Link
               key={project.id}
               href={project.href}
               target="blank"
-              className="hover:bg-gray-100 rounded-xl p-[16px]">
+              className="hover:bg-gray-100 rounded-lg p-[16px]">
               <h1>
                 <DecodeAnimation
                   autoplay
@@ -27,16 +27,16 @@ export default function Projects() {
               </h1>
               <div className="flex flex-row justify-between">
                 {/* <Badge variant="outline" className="mt-1 mb-1"> */}
-                <p className="w-fit font-semibold text-muted-foreground text-sm">
+                {/* <p className="w-fit font-semibold text-muted-foreground text-sm">
                   <DecodeAnimation
                     autoplay
                     text={project.type}
                     allowedCharacters={["numbers", "symbols"]}
                   />
-                </p>
+                </p> */}
                 {/* </Badge> */}
 
-                <p className="w-fit font-semibold text-muted-foreground text-sm">
+                <p className="w-fit  text-muted-foreground text-sm">
                   <DecodeAnimation
                     autoplay
                     text={project.date}
