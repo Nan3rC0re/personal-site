@@ -1,5 +1,9 @@
 import Image from "next/image";
 import Link from "next/link";
+import { MoveRight } from "lucide-react";
+import { Linkedin } from "lucide-react";
+import { Github } from "lucide-react";
+import Navbar from "@/components/nav";
 
 export default function Home() {
   return (
@@ -10,19 +14,19 @@ export default function Home() {
           <h2 className="text-muted-foreground font-medium">
             Web Developer and Product Designer
           </h2>
-          <div className="flex flex-row gap-x-10 text-muted-foreground">
+          <div className="flex flex-row gap-x-10 mt-4 text-muted-foreground">
             <Link target="blank" href="https://github.com/Nan3rOkae">
-              Github
+              <Github />
             </Link>
             <Link
               target="blank"
               href="https://www.linkedin.com/in/nana-kofi-okae/">
-              LinkedIn
+              <Linkedin />
             </Link>
           </div>
         </div>
-        <div className="flex flex-col text-muted-foreground gap-y-2">
-          <p className="flex items-center ">
+        <div className="flex flex-col text-muted-foreground gap-y-2 ">
+          <p className="flex items-center flex-wrap ">
             I am currently a Product Design Intern @
             <span className="inline-block mx-2">
               <Image
@@ -30,11 +34,12 @@ export default function Home() {
                 width={45}
                 height={45}
                 alt="Duolingo Logo"
+                className="h-auto w-auto"
               />
             </span>
             in the Monetization team on subscription Packaging.
           </p>
-          <p className="flex items-center ">
+          <p className="flex items-center flex-wrap  ">
             I was previously a Full Stack Software Engineer intern @
             <span className="inline-block mx-2">
               <Image
@@ -42,15 +47,12 @@ export default function Home() {
                 width={50}
                 height={50}
                 alt="Salesforce Logo"
+                className="h-auto w-auto"
               />
             </span>
           </p>
         </div>
-
-        <div className="flex flex-row gap-x-12 font-medium">
-          <Link href="">Resume</Link>
-          <Link href="/projects">Projects</Link>
-        </div>
+        <Navbar />
       </div>
     </main>
   );
