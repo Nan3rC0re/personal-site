@@ -69,9 +69,12 @@ export default function Home() {
         </div>
         <Navbar />
       </div> */}
-      <h1 className="text-3xl font-bold" style={{ color }}>
-        Rebuilding... Sorry :(
-      </h1>
+      <div className="flex flex-row gap-x-2">
+        <h1 className="text-3xl font-bold" style={{ color }}>
+          Working on it
+        </h1>
+        <h1 className="text-3xl font-bold "> -Nana</h1>
+      </div>
     </main>
   );
 }
