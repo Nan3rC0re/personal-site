@@ -1,6 +1,5 @@
 import Image from "next/image";
 import Link from "next/link";
-import { MoveRight } from "lucide-react";
 import { Linkedin } from "lucide-react";
 import { Github } from "lucide-react";
 import Navbar from "@/components/nav";
@@ -11,6 +10,7 @@ export default function Home() {
       <div className="max-w-[800px] flex flex-col px-[16px] py-[16px] h-fit gap-y-[60px] mt-20 max-md:px-6 ">
         <div className="flex flex-col gap-y-1">
           <h1 className="font-bold">Nana Kofi Okae</h1>
+
           <h2 className="text-muted-foreground font-medium">
             Web Developer and Product Designer
           </h2>
@@ -25,6 +25,7 @@ export default function Home() {
             </Link>
           </div>
         </div>
+      
         <div className="flex flex-col text-muted-foreground gap-y-2 ">
           <p className="flex items-center flex-wrap ">
             I am currently a Product Design Intern @
