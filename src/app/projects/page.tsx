@@ -5,6 +5,13 @@ import { projects } from "@/config/data";
 import Link from "next/link";
 import Navbar from "@/components/nav";
 import { Badge } from "@/components/ui/badge";
+import {
+  Tooltip,
+  TooltipContent,
+  TooltipProvider,
+  TooltipTrigger,
+} from "@/components/ui/tooltip";
+
 
 export default function Projects() {
   return (
@@ -49,6 +56,7 @@ export default function Projects() {
                   autoplay
                   text={project.description}
                   allowedCharacters={["numbers", "symbols"]}
+                  interval={20}
                 />
               </p>
             </Link>

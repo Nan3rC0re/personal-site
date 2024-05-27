@@ -31,7 +31,7 @@ export const projects: projects[] = [
     // type: "Design",
     description: "An experimental hands free experience for the duolingo app.",
     date: "2023",
-    href: "https://www.figma.com/design/v7dkT9wcwAHRo5DDWmuJtE/Nana-x-Liv?node-id=1717-4921&t=WBNJuxXL2LdmvxQW-1",
+    href: "https://www.figma.com/design/moaulxpQQbNBsB1Yba1PDm/Duo-Sings-(Portfolio-edition)?node-id=0-1&t=FWzx2G1qh4vwPcgj-1",
   },
   {
     id: "4",
